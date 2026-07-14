@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery — DAAM</title>
+    <meta
+      name="description"
+      content="A living archive of Dr. Abraham Achimugu Ministries — teaching, fellowship, family, service, and heritage."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="siteHeader">
+      <nav>
+        <a href="index.html" class="brand">DA<span>A</span>M</a>
+        <div class="nav-links" id="navLinks">
+          <a href="about.html">About</a>
+          <a href="ministry.html">Ministry</a>
+          <a href="sermons.html">Sermons</a>
+          <a href="publications.html">Publications</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#contact" class="nav-cta">Connect</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Gallery</span></div>
+        <span class="eyebrow">Gallery</span>
+        <h1>A living archive of <em>the work.</em></h1>
+        <p>
+          Teaching, fellowship, family, service, and heritage — a visual
+          record of a ministry still being lived, one season at a time.
+          Choose a collection to look closer.
+        </p>
+      </div>
+    </section>
+
+    <div class="light-zone2">
+      <section class="gallery" style="padding-top:60px;">
+        <div class="container">
+          <!-- Collection cards are rendered here by gallery.js from a
+               single data structure — see GALLERY_COLLECTIONS at the
+               top of that file to add or swap in real photos. -->
+          <div class="collections-grid" id="collectionsGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Gallery image viewer">
+      <div class="lightbox-backdrop" data-close></div>
+      <div class="lightbox-inner">
+        <button class="lightbox-close" data-close aria-label="Close gallery">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div class="lightbox-head">
+          <span id="lightboxTitle"></span>
+          <span id="lightboxCounter"></span>
+        </div>
+        <div class="lightbox-stage">
+          <button class="lightbox-nav prev" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <div class="lightbox-image" id="lightboxImage"></div>
+          <button class="lightbox-nav next" aria-label="Next image">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- ================= CTA + FOOTER ================= -->
+    <div class="dark-zone3">
+      <section class="bio-cta">
+        <div class="container">
+          <span class="eyebrow">Be Part of the Story</span>
+          <h2>Join us at the <em>next gathering.</em></h2>
+          <div class="bio-cta-actions">
+            <a href="index.html#programmes" class="btn-primary">See Upcoming Programmes →</a>
+            <a href="index.html#contact" class="btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <span class="brand">DA<span>A</span>M</span>
+              <p>
+                Dr. Abraham Achimugu Ministries — teaching the Word with
+                clarity, conviction, and hope for a generation still listening.
+              </p>
+            </div>
+            <div class="footer-cols">
+              <div class="footer-col">
+                <div class="label">Explore</div>
+                <a href="about.html">About</a>
+                <a href="ministry.html">Ministry Arms</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="publications.html">Publications</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="index.html#programmes">Programmes</a>
+              </div>
+              <div class="footer-col">
+                <div class="label">Connect</div>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://www.instagram.com/achimuguabraham?igsh=eGhkeDlpeHEwM3hn" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://youtube.com/@thezionitesnetworkglobal?si=r2S44b7T3e485rx6" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.facebook.com/share/1BSerbU6ot/" target="_blank" rel="noopener">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="hairline"></div>
+          <div class="footer-bottom" style="padding-top: 26px">
+            <span>© 2026 Dr. Abraham Achimugu Ministries. All rights reserved.</span>
+            <span>Crafted with reverence.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
