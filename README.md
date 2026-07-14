@@ -26,11 +26,11 @@ A modern and responsive ministry website built for Dr. Abraham Achimugu Ministri
 
 - ## Preview
 
-![Homepage](README-assets/homepage.png)
+![Homepage](README-assets/hero.png)
 
-![Hero Section](README-assets/hero.png)
+![Hero Section](README-assets/gallery.png)
 
-![About Section](README-assets/about.png)
+![About Section](README-assets/publications.png)
 
 ## Project Status
 
